@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text</title>
+    <script>
+        async function fetchSpeechText() {
+            try {
+                const response = await fetch('/speech_to_text_feed');
+                const data = await response.json();
+                document.getElementById('speechOutput').innerText = data.speech_text;
+            } catch (error) {
+                console.error("Error fetching speech data:", error);
+            }
+        }
+
+        // Fetch live speech-to-text data every second
+        setInterval(fetchSpeechText, 1000);
+    </script>
+</head>
+<body>
+    <h1>Real-Time Speech-to-Text</h1>
+    <p id="speechOutput">Listening...</p>
+</body>
+</html>
