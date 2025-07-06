@@ -1,6 +1,3 @@
-Here is your **updated full README** (plain text format) with the **gesture classes** now included clearly and cleanly. You can copy and paste this directly into your `README.md` file:
-
----
 
 🗣️ Action Vocalizer
 
