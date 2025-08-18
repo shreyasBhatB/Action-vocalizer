@@ -174,6 +174,3 @@ pyttsx3
 SpeechRecognition
 pyaudio (manual install may be required)
 
----
-
-✅ You can now paste this into your `README.md` and your project will be clean, informative, and ready to share professionally. Let me know if you want a Markdown version too (for better formatting on GitHub), a project logo, or demo GIF!
